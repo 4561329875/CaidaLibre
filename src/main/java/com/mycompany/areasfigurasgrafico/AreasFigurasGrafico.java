@@ -5,12 +5,15 @@
 package com.mycompany.areasfigurasgrafico;
 
 
+import backend.Figura;
+import backend.Triangulo;
 import com.formdev.flatlaf.FlatLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.intellijthemes.FlatCyanLightIJTheme;
 import com.formdev.flatlaf.intellijthemes.FlatDarkFlatIJTheme;
 import frontend.MenuJFrame;
 import java.awt.Color;
+import java.util.Arrays;
 import java.util.Collections;
 import javax.swing.UIManager;
 
@@ -18,10 +21,16 @@ import javax.swing.UIManager;
 /**
  *
  * @author david
+ * 
+ * clave   KP9HDghFn1HfOXD7
+ * 
+ * WjykdQ47BQOqZoDm
  */
 public class AreasFigurasGrafico {
 
     public static void main(String[] args) {
+        
+        
         FlatLaf.setGlobalExtraDefaults( Collections.singletonMap( "@accentColor", "#31524F" ) );
         
         FlatLaf.setGlobalExtraDefaults( Collections.singletonMap( "@foreground", "#000000" ) );
@@ -31,5 +40,12 @@ public class AreasFigurasGrafico {
         UIManager.put("Panel.background",Color.decode("#A3CCC9"));
         MenuJFrame menu = new MenuJFrame();
         menu.setVisible(true);
+        
+        
+        
+                
+        
+        
+        
     }
 }
