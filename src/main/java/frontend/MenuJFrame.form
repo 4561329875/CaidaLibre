@@ -29,8 +29,8 @@
           <Group type="102" attributes="0">
               <Component id="jPanelLateral" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanelContenido" max="32767" attributes="0"/>
-                  <Component id="jPanelSuperior" pref="452" max="32767" attributes="0"/>
+                  <Component id="jPanelContenido" min="-2" max="-2" attributes="0"/>
+                  <Component id="jPanelSuperior" pref="640" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -40,9 +40,9 @@
           <Component id="jPanelLateral" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
               <Component id="jPanelSuperior" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jPanelContenido" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+              <Component id="jPanelContenido" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -152,7 +152,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="363" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="jButtonSalir" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               </Group>
@@ -184,7 +184,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="640" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">

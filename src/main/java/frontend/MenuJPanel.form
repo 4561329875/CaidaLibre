@@ -94,25 +94,10 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelTriangulo">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\triangulo6.png"/>
-        </Property>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\cuadrado1.png"/>
-        </Property>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\circulo2.png"/>
-        </Property>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

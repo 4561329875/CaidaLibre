@@ -50,12 +50,6 @@ public class MenuJPanel extends javax.swing.JPanel {
 
         jLabelParrafo.setText("<html>Se utiliza para medir la extensión de una superficie bidimensional. El cálculo del área implica la multiplicación de dos dimensiones, como la longitud y el ancho, en el caso de figuras como cuadrados y rectángulos. Para figuras complejas, como triángulos o círculos, se aplican fórmulas.</html>");
 
-        jLabelTriangulo.setIcon(new javax.swing.ImageIcon("C:\\Users\\labctr.BQV-LAB-SALA8\\Documents\\TRABAJO GRUPAL\\FrigurasMongoDB\\triangulo6.png")); // NOI18N
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\labctr.BQV-LAB-SALA8\\Documents\\TRABAJO GRUPAL\\FrigurasMongoDB\\cuadrado1.png")); // NOI18N
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\labctr.BQV-LAB-SALA8\\Documents\\TRABAJO GRUPAL\\FrigurasMongoDB\\circulo2.png")); // NOI18N
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(

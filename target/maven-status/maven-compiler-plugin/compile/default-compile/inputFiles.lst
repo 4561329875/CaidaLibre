@@ -1,25 +1,12 @@
-<<<<<<< HEAD
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\EliminarAreasJPanel.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\CirculoJPanel.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\ListarJPanel.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\com\mycompany\areasfigurasgrafico\AreasFigurasGrafico.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\CuadradoJPanel.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\MenuJFrame.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\MenuJPanel.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\backend\Triangulo.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\backend\Circulo.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\TrianguloJPanel.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\backend\Cuadrado.java
-C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\backend\Figura.java
-=======
-F:\poo\FrigurasMongoDB\src\main\java\backend\Circulo.java
-F:\poo\FrigurasMongoDB\src\main\java\com\mycompany\areasfigurasgrafico\AreasFigurasGrafico.java
-F:\poo\FrigurasMongoDB\src\main\java\frontend\MenuJFrame.java
-F:\poo\FrigurasMongoDB\src\main\java\frontend\CirculoJPanel.java
-F:\poo\FrigurasMongoDB\src\main\java\frontend\CuadradoJPanel.java
-F:\poo\FrigurasMongoDB\src\main\java\backend\Cuadrado.java
-F:\poo\FrigurasMongoDB\src\main\java\frontend\TrianguloJPanel.java
-F:\poo\FrigurasMongoDB\src\main\java\backend\Triangulo.java
-F:\poo\FrigurasMongoDB\src\main\java\backend\Figura.java
-F:\poo\FrigurasMongoDB\src\main\java\frontend\MenuJPanel.java
->>>>>>> 6539dff1c8c46cfc674d1759443e1e468f4230a2
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\backend\Figura.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\MenuJFrame.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\TrianguloJPanel.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\backend\Cuadrado.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\backend\Triangulo.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\MenuJPanel.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\CuadradoJPanel.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\backend\Circulo.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\CirculoJPanel.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\com\mycompany\areasfigurasgrafico\AreasFigurasGrafico.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\ListarJPanel.java
+F:\poo\TRABAJO GRUPAL\FrigurasMongoDB\src\main\java\frontend\EliminarAreasJPanel.java
