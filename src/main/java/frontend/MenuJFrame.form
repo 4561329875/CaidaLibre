@@ -4,7 +4,7 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[600, 350]"/>
+      <Dimension value="[600, 400]"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -30,19 +30,20 @@
               <Component id="jPanelLateral" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jPanelContenido" max="32767" attributes="0"/>
-                  <Component id="jPanelSuperior" max="32767" attributes="0"/>
+                  <Component id="jPanelSuperior" pref="452" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanelLateral" alignment="0" max="32767" attributes="0"/>
+          <Component id="jPanelLateral" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
-              <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
-              <Component id="jPanelContenido" max="32767" attributes="0"/>
+              <Component id="jPanelSuperior" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jPanelContenido" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
-          <Component id="jPanelSuperior" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -50,33 +51,39 @@
     <Container class="javax.swing.JPanel" name="jPanelLateral">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="90" green="99" red="14" type="rgb"/>
+          <Color blue="62" green="66" red="29" type="rgb"/>
         </Property>
       </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
+                  <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
+              </Group>
               <Component id="jButtonTriangulo" min="-2" pref="160" max="-2" attributes="0"/>
               <Component id="jButtonCirculo" min="-2" pref="160" max="-2" attributes="0"/>
               <Component id="jButtonCuadrado" min="-2" pref="160" max="-2" attributes="0"/>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                  <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
-              </Group>
+              <Component id="jButtonListar" min="-2" pref="160" max="-2" attributes="0"/>
+              <Component id="jButtonEliminar" min="-2" pref="160" max="-2" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <EmptySpace min="26" pref="26" max="-2" attributes="0"/>
                   <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="jButtonTriangulo" min="-2" pref="40" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   <Component id="jButtonCirculo" min="-2" pref="40" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   <Component id="jButtonCuadrado" min="-2" pref="40" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="jButtonListar" min="-2" pref="40" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="jButtonEliminar" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -113,6 +120,22 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCuadradoActionPerformed"/>
           </Events>
         </Component>
+        <Component class="javax.swing.JButton" name="jButtonListar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Listar &#xc1;reas"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonListarActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButtonEliminar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Eliminar &#xc1;reas"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonEliminarActionPerformed"/>
+          </Events>
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanelSuperior">
@@ -129,7 +152,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="351" max="32767" attributes="0"/>
+                  <EmptySpace pref="363" max="32767" attributes="0"/>
                   <Component id="jButtonSalir" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               </Group>
@@ -166,7 +189,7 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="311" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>

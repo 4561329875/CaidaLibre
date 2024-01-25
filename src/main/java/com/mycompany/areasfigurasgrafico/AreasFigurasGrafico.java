@@ -28,7 +28,7 @@ public class AreasFigurasGrafico {
         FlatLightLaf.setup();
         UIManager.put("Button.background", Color.decode("#28C9BF"));
         UIManager.put("TextField.background", Color.decode("#2DE3E3"));
-        UIManager.put("Panel.background",Color.decode("#00B8AB"));
+        UIManager.put("Panel.background",Color.decode("#A3CCC9"));
         MenuJFrame menu = new MenuJFrame();
         menu.setVisible(true);
     }

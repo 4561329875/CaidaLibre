@@ -39,9 +39,9 @@
                       <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jLabelImg" min="-2" pref="75" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabelLado" min="-2" max="-2" attributes="0"/>
@@ -71,10 +71,9 @@
               <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabelParrafo" min="-2" pref="58" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabelLado" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextFieldLado" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -87,9 +86,12 @@
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Component id="jButtonCalcular" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabelImg" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="28" max="32767" attributes="0"/>
+              <EmptySpace pref="27" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -105,13 +107,6 @@
     <Component class="javax.swing.JLabel" name="jLabelParrafo">
       <Properties>
         <Property name="text" type="java.lang.String" value="&lt;html&gt; El &#xe1;rea de un cuadrado se calcula multiplicando la longitud de un lado por s&#xed; misma. La f&#xf3;rmula general es A = lado&#xb2;, donde &quot;lado&quot; representa la longitud de uno de los lados del cuadrado.&lt;/html&gt;"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabelImg">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="new javax.swing.ImageIcon(&quot;E:/poo/areasFigurasGrafico/src/main/java/resourses/cuadrado.png&quot;)" type="code"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelLado">
@@ -138,6 +133,13 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldLado">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\cuadrado1.png"/>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

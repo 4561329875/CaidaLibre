@@ -40,9 +40,9 @@ public class TrianguloJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jToggleButton1 = new javax.swing.JToggleButton();
+        jLabelTriangulo = new javax.swing.JLabel();
         jLabelTitulo = new javax.swing.JLabel();
         jLabelParrafo = new javax.swing.JLabel();
-        jLabelImg = new javax.swing.JLabel();
         jLabelBase = new javax.swing.JLabel();
         jLabelAltura = new javax.swing.JLabel();
         jLabelArea = new javax.swing.JLabel();
@@ -50,8 +50,11 @@ public class TrianguloJPanel extends javax.swing.JPanel {
         jButtonCalcular = new javax.swing.JButton();
         jTextFieldBase = new javax.swing.JTextField();
         jTextFieldAltura = new javax.swing.JTextField();
+        jLabelTriangulo1 = new javax.swing.JLabel();
 
         jToggleButton1.setText("jToggleButton1");
+
+        jLabelTriangulo.setIcon(new javax.swing.ImageIcon("C:\\Users\\labctr.BQV-LAB-SALA8\\Documents\\TRABAJO GRUPAL\\FrigurasMongoDB\\triangulo6.png")); // NOI18N
 
         setPreferredSize(new java.awt.Dimension(424, 251));
 
@@ -60,8 +63,6 @@ public class TrianguloJPanel extends javax.swing.JPanel {
         jLabelTitulo.setToolTipText("");
 
         jLabelParrafo.setText("<html>El área de un triángulo se calcula con A = (base * altura) / 2, donde la base es la longitud de uno de los lados y la altura es la distancia perpendicular desde la base hasta el vértice opuesto.</html>");
-
-        jLabelImg.setIcon(new javax.swing.ImageIcon("E:/poo/areasFigurasGrafico/src/main/java/resourses/triangulo.png"));
 
         jLabelBase.setText("Base:");
 
@@ -78,6 +79,8 @@ public class TrianguloJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabelTriangulo1.setIcon(new javax.swing.ImageIcon("C:\\Users\\labctr.BQV-LAB-SALA8\\Documents\\TRABAJO GRUPAL\\FrigurasMongoDB\\triangulo6.png")); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -91,9 +94,9 @@ public class TrianguloJPanel extends javax.swing.JPanel {
                         .addContainerGap()
                         .addComponent(jLabelTitulo))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jLabelImg, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabelTriangulo1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabelBase)
@@ -136,7 +139,7 @@ public class TrianguloJPanel extends javax.swing.JPanel {
                         .addComponent(jButtonCalcular)
                         .addContainerGap(27, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabelImg, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabelTriangulo1)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -154,10 +157,11 @@ public class TrianguloJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabelAltura;
     private javax.swing.JLabel jLabelArea;
     private javax.swing.JLabel jLabelBase;
-    private javax.swing.JLabel jLabelImg;
     private javax.swing.JLabel jLabelParrafo;
     private javax.swing.JLabel jLabelResArea;
     private javax.swing.JLabel jLabelTitulo;
+    private javax.swing.JLabel jLabelTriangulo;
+    private javax.swing.JLabel jLabelTriangulo1;
     private javax.swing.JTextField jTextFieldAltura;
     private javax.swing.JTextField jTextFieldBase;
     private javax.swing.JToggleButton jToggleButton1;
