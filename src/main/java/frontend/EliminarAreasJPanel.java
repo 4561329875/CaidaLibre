@@ -4,6 +4,20 @@
  */
 package frontend;
 
+import backend.Circulo;
+import backend.Cuadrado;
+import backend.Triangulo;
+import com.mongodb.ConnectionString;
+import com.mongodb.MongoClientSettings;
+import com.mongodb.MongoException;
+import com.mongodb.ServerApi;
+import com.mongodb.ServerApiVersion;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+
 /**
  *
  * @author labctr
@@ -15,6 +29,7 @@ public class EliminarAreasJPanel extends javax.swing.JPanel {
      */
     public EliminarAreasJPanel() {
         initComponents();
+         jLabelMensaje.putClientProperty( "FlatLaf.styleClass", "h2" );
     }
 
     /**
@@ -27,75 +42,87 @@ public class EliminarAreasJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabelTriangulo1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jLabelImg = new javax.swing.JLabel();
-        jLabelImg1 = new javax.swing.JLabel();
-        jLabelImg2 = new javax.swing.JLabel();
+        jLabelTriangulo = new javax.swing.JLabel();
+        jLabelCuadrado = new javax.swing.JLabel();
+        jLabelCirculo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabelMensaje = new javax.swing.JLabel();
 
-        jLabelImg.setIcon(new javax.swing.ImageIcon("./src/main/java/resourses/triangulo.png"));
+        jLabelTriangulo.setIcon(new javax.swing.ImageIcon("./src/main/java/resourses/triangulo.png"));
+        jLabelTriangulo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelTrianguloMouseClicked(evt);
+            }
+        });
 
-        jLabelImg1.setIcon(new javax.swing.ImageIcon("./src/main/java/resourses/cuadrado.png"));
+        jLabelCuadrado.setIcon(new javax.swing.ImageIcon("./src/main/java/resourses/cuadrado.png"));
+        jLabelCuadrado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelCuadradoMouseClicked(evt);
+            }
+        });
 
-        jLabelImg2.setIcon(new javax.swing.ImageIcon("./src/main/java/resourses/circulo.png"));
+        jLabelCirculo.setIcon(new javax.swing.ImageIcon("./src/main/java/resourses/circulo.png"));
+        jLabelCirculo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelCirculoMouseClicked(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setText("ELIMINAR ÁREAS DE FIGURAS");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabelImg, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelImg1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabelImg2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabelTriangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(jLabelCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabelCirculo, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(75, 75, 75)
+                        .addComponent(jLabel1)))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(11, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jLabelImg1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabelImg, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)))
-                .addContainerGap())
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabelImg2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
+                        .addComponent(jLabelTriangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(16, 16, 16))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabelCirculo, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabelCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabelTriangulo1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addContainerGap(397, Short.MAX_VALUE))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabelMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabelTriangulo1))
-                .addContainerGap(163, Short.MAX_VALUE))
+                .addGap(45, 45, 45)
+                .addComponent(jLabelMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(111, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -110,14 +137,109 @@ public class EliminarAreasJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jLabelTrianguloMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelTrianguloMouseClicked
+        // TODO add your handling code here:
+        String connectionString = "mongodb+srv://fdtoro:WjykdQ47BQOqZoDm@cluster0.mgdhlmc.mongodb.net/?retryWrites=true&w=majority";
+        ServerApi serverApi = ServerApi.builder()
+                .version(ServerApiVersion.V1)
+                .build();
+        MongoClientSettings settings = MongoClientSettings.builder()
+                .applyConnectionString(new ConnectionString(connectionString))
+                .serverApi(serverApi)
+                .build();
+        // Create a new client and connect to the server
+        try (MongoClient mongoClient = MongoClients.create(settings)) {
+            try {
+
+                MongoDatabase database = mongoClient.getDatabase("figurasBDD");
+
+                MongoCollection<Document> collection = database.getCollection("Triangulos");
+
+                if (collection.countDocuments() == 0) {
+                    jLabelMensaje.setText("No hay datos de Triangulos para borrar.");
+                } else {
+                    Triangulo tri = new Triangulo(0, 0);
+                    tri.eliminarAreas();
+
+                    jLabelMensaje.setText("Se han eliminado los Triangulos corectamente.");
+
+                }
+
+                mongoClient.close();
+            } catch (MongoException e) {
+                e.printStackTrace();
+            }
+    }//GEN-LAST:event_jLabelTrianguloMouseClicked
+    }
+    private void jLabelCuadradoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelCuadradoMouseClicked
+        // TODO add your handling code here:
+        String connectionString = "mongodb+srv://fdtoro:WjykdQ47BQOqZoDm@cluster0.mgdhlmc.mongodb.net/?retryWrites=true&w=majority";
+ServerApi serverApi = ServerApi.builder()
+        .version(ServerApiVersion.V1)
+        .build();
+MongoClientSettings settings = MongoClientSettings.builder()
+        .applyConnectionString(new ConnectionString(connectionString))
+        .serverApi(serverApi)
+        .build();
+// Create a new client and connect to the server
+try (MongoClient mongoClient = MongoClients.create(settings)) {
+    try {
+        MongoDatabase database = mongoClient.getDatabase("figurasBDD");
+        MongoCollection<Document> collection = database.getCollection("Cuadrados");
+
+        if (collection.countDocuments() == 0) {
+            jLabelMensaje.setText("No hay datos de Cuadrados para borrar.");
+        } else {
+            Cuadrado cua = new Cuadrado(0);
+            cua.eliminarAreas();
+            jLabelMensaje.setText("Se han eliminado los Cuadrados correctamente.");
+        }
+
+        mongoClient.close();
+    } catch (MongoException e) {
+        e.printStackTrace();
+    }
+}
+    }//GEN-LAST:event_jLabelCuadradoMouseClicked
+
+    private void jLabelCirculoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelCirculoMouseClicked
+        // TODO add your handling code here:
+        String connectionString = "mongodb+srv://fdtoro:WjykdQ47BQOqZoDm@cluster0.mgdhlmc.mongodb.net/?retryWrites=true&w=majority";
+ServerApi serverApi = ServerApi.builder()
+        .version(ServerApiVersion.V1)
+        .build();
+MongoClientSettings settings = MongoClientSettings.builder()
+        .applyConnectionString(new ConnectionString(connectionString))
+        .serverApi(serverApi)
+        .build();
+// Create a new client and connect to the server
+try (MongoClient mongoClient = MongoClients.create(settings)) {
+    try {
+        MongoDatabase database = mongoClient.getDatabase("figurasBDD");
+        MongoCollection<Document> collection = database.getCollection("Circulos");
+
+        if (collection.countDocuments() == 0) {
+            jLabelMensaje.setText("No hay datos de Circulos para borrar.");
+        } else {
+            Circulo cir = new Circulo(0);
+            cir.eliminarAreas();
+            jLabelMensaje.setText("Se han eliminado los Circulos correctamente.");
+        }
+
+        mongoClient.close();
+    } catch (MongoException e) {
+        e.printStackTrace();
+    }
+}
+    }//GEN-LAST:event_jLabelCirculoMouseClicked
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabelImg;
-    private javax.swing.JLabel jLabelImg1;
-    private javax.swing.JLabel jLabelImg2;
-    private javax.swing.JLabel jLabelTriangulo1;
+    private javax.swing.JLabel jLabelCirculo;
+    private javax.swing.JLabel jLabelCuadrado;
+    private javax.swing.JLabel jLabelMensaje;
+    private javax.swing.JLabel jLabelTriangulo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

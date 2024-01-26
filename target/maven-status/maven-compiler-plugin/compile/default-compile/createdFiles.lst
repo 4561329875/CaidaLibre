@@ -1,7 +1,9 @@
+frontend\EliminarAreasJPanel$1.class
 frontend\MenuJFrame$5.class
 backend\Figura.class
 frontend\ListarJPanel$2.class
 frontend\ListarJPanel.class
+frontend\EliminarAreasJPanel$3.class
 frontend\ListarJPanel$1.class
 frontend\MenuJFrame$2.class
 frontend\MenuJFrame$4.class
@@ -21,5 +23,6 @@ frontend\MenuJFrame$1.class
 frontend\CuadradoJPanel$1.class
 backend\Cuadrado.class
 com\mycompany\areasfigurasgrafico\AreasFigurasGrafico.class
+frontend\EliminarAreasJPanel$2.class
 frontend\MenuJPanel.class
 frontend\MenuJFrame$3.class

@@ -61,6 +61,7 @@ public class MenuJFrame extends javax.swing.JFrame {
 
         jPanelLateral.setBackground(new java.awt.Color(41, 102, 98));
 
+        jLabelTitulo.setForeground(new java.awt.Color(255, 255, 255));
         jLabelTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelTitulo.setText("Areas de figuras");
         jLabelTitulo.setToolTipText("");
@@ -133,6 +134,7 @@ public class MenuJFrame extends javax.swing.JFrame {
         jPanelSuperior.setBackground(new java.awt.Color(41, 102, 98));
         jPanelSuperior.setPreferredSize(new java.awt.Dimension(440, 60));
 
+        jButtonSalir.setForeground(new java.awt.Color(255, 255, 255));
         jButtonSalir.setText("Salir");
         jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
