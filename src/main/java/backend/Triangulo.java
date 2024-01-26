@@ -144,4 +144,13 @@ public class Triangulo extends Figura {
         return array;
     }
 
+    public double getBase() {
+        return base;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+   
 }

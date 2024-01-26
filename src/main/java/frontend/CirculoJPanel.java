@@ -5,7 +5,6 @@
 package frontend;
 
 import backend.Circulo;
-import backend.Triangulo;
 import javax.swing.ImageIcon;
 
 /**
@@ -132,7 +131,7 @@ public class CirculoJPanel extends javax.swing.JPanel {
     private void jButtonCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCalcularActionPerformed
         Circulo cir = new Circulo(Double.parseDouble(jTextFieldRadio.getText()));
         jLabelResArea.setText(String.valueOf(cir.calcularArea()));
-        
+        cir.guardarBDD();
         
     }//GEN-LAST:event_jButtonCalcularActionPerformed
 

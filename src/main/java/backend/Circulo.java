@@ -142,4 +142,9 @@ public class Circulo extends Figura {
 
         return array;
     }
+
+    public double getRadio() {
+        return radio;
+    }
+    
 }

@@ -4,7 +4,7 @@
  */
 package frontend;
 
-import backend.Circulo;
+
 import backend.Triangulo;
 import javax.swing.ImageIcon;
 
@@ -144,7 +144,7 @@ public class TrianguloJPanel extends javax.swing.JPanel {
     private void jButtonCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCalcularActionPerformed
         Triangulo tri = new Triangulo(Double.parseDouble(jTextFieldBase.getText()), Double.parseDouble(jTextFieldAltura.getText()));
         jLabelResArea.setText(String.valueOf(tri.calcularArea()));
-        
+        tri.guardarBDD();
         
     }//GEN-LAST:event_jButtonCalcularActionPerformed
 

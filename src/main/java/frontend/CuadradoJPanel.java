@@ -4,7 +4,7 @@
  */
 package frontend;
 
-import backend.Circulo;
+
 import backend.Cuadrado;
 import javax.swing.ImageIcon;
 
@@ -132,6 +132,7 @@ public class CuadradoJPanel extends javax.swing.JPanel {
     private void jButtonCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCalcularActionPerformed
         Cuadrado cua = new Cuadrado(Double.parseDouble(jTextFieldLado.getText()));
         jLabelResArea.setText(String.valueOf(cua.calcularArea()));
+        cua.guardarBDD();
         
         
     }//GEN-LAST:event_jButtonCalcularActionPerformed

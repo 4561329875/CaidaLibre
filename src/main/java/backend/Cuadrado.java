@@ -141,4 +141,8 @@ public class Cuadrado extends Figura {
 
         return array;
     }
+
+    public double getLado() {
+        return lado;
+    }
 }
