@@ -39,9 +39,9 @@
                       <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jLabelImg" min="-2" pref="75" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabelRadio" min="-2" max="-2" attributes="0"/>
@@ -71,9 +71,10 @@
               <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabelParrafo" min="-2" pref="58" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabelRadio" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextFieldRadio" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -86,9 +87,9 @@
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Component id="jButtonCalcular" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelImg" min="-2" pref="75" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="22" max="32767" attributes="0"/>
+              <EmptySpace pref="28" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -104,6 +105,13 @@
     <Component class="javax.swing.JLabel" name="jLabelParrafo">
       <Properties>
         <Property name="text" type="java.lang.String" value="&lt;html&gt;El &#xe1;rea de un c&#xed;rculo se calcula mediante la f&#xf3;rmula A = &#x3c0; * r&#xb2;, donde &#x3c0; (pi) es una constante aproximadamente igual a 3.14159, y r es el radio del c&#xed;rculo, que es la distancia desde el centro del c&#xed;rculo hasta cualquier punto en su borde. &lt;/html&gt;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelImg">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new javax.swing.ImageIcon(&quot;./src/main/java/resourses/circulo.png&quot;)" type="code"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelRadio">
@@ -130,13 +138,6 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldRadio">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\labctr.BQV-LAB-SALA8\Documents\TRABAJO GRUPAL\FrigurasMongoDB\circulo2.png"/>
-        </Property>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

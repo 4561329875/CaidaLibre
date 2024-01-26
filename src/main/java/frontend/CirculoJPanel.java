@@ -42,12 +42,12 @@ public class CirculoJPanel extends javax.swing.JPanel {
         jToggleButton1 = new javax.swing.JToggleButton();
         jLabelTitulo = new javax.swing.JLabel();
         jLabelParrafo = new javax.swing.JLabel();
+        jLabelImg = new javax.swing.JLabel();
         jLabelRadio = new javax.swing.JLabel();
         jLabelArea = new javax.swing.JLabel();
         jLabelResArea = new javax.swing.JLabel();
         jButtonCalcular = new javax.swing.JButton();
         jTextFieldRadio = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
 
         jToggleButton1.setText("jToggleButton1");
 
@@ -58,6 +58,8 @@ public class CirculoJPanel extends javax.swing.JPanel {
         jLabelTitulo.setToolTipText("");
 
         jLabelParrafo.setText("<html>El área de un círculo se calcula mediante la fórmula A = π * r², donde π (pi) es una constante aproximadamente igual a 3.14159, y r es el radio del círculo, que es la distancia desde el centro del círculo hasta cualquier punto en su borde. </html>");
+
+        jLabelImg.setIcon(new javax.swing.ImageIcon("./src/main/java/resourses/circulo.png"));
 
         jLabelRadio.setText("Radio:");
 
@@ -72,8 +74,6 @@ public class CirculoJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\labctr.BQV-LAB-SALA8\\Documents\\TRABAJO GRUPAL\\FrigurasMongoDB\\circulo2.png")); // NOI18N
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -87,9 +87,9 @@ public class CirculoJPanel extends javax.swing.JPanel {
                         .addContainerGap()
                         .addComponent(jLabelTitulo))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
+                        .addGap(33, 33, 33)
+                        .addComponent(jLabelImg, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabelRadio)
@@ -111,9 +111,10 @@ public class CirculoJPanel extends javax.swing.JPanel {
                 .addComponent(jLabelTitulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabelParrafo, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabelRadio)
                             .addComponent(jTextFieldRadio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -123,8 +124,8 @@ public class CirculoJPanel extends javax.swing.JPanel {
                             .addComponent(jLabelResArea))
                         .addGap(21, 21, 21)
                         .addComponent(jButtonCalcular))
-                    .addComponent(jLabel3))
-                .addContainerGap(22, Short.MAX_VALUE))
+                    .addComponent(jLabelImg, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -138,8 +139,8 @@ public class CirculoJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonCalcular;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelArea;
+    private javax.swing.JLabel jLabelImg;
     private javax.swing.JLabel jLabelParrafo;
     private javax.swing.JLabel jLabelRadio;
     private javax.swing.JLabel jLabelResArea;

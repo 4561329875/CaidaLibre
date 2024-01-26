@@ -42,12 +42,12 @@ public class CuadradoJPanel extends javax.swing.JPanel {
         jToggleButton1 = new javax.swing.JToggleButton();
         jLabelTitulo = new javax.swing.JLabel();
         jLabelParrafo = new javax.swing.JLabel();
+        jLabelImg = new javax.swing.JLabel();
         jLabelLado = new javax.swing.JLabel();
         jLabelArea = new javax.swing.JLabel();
         jLabelResArea = new javax.swing.JLabel();
         jButtonCalcular = new javax.swing.JButton();
         jTextFieldLado = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
 
         jToggleButton1.setText("jToggleButton1");
 
@@ -58,6 +58,8 @@ public class CuadradoJPanel extends javax.swing.JPanel {
         jLabelTitulo.setToolTipText("");
 
         jLabelParrafo.setText("<html> El área de un cuadrado se calcula multiplicando la longitud de un lado por sí misma. La fórmula general es A = lado², donde \"lado\" representa la longitud de uno de los lados del cuadrado.</html>");
+
+        jLabelImg.setIcon(new javax.swing.ImageIcon("./src/main/java/resourses/cuadrado.png"));
 
         jLabelLado.setText("Lado:");
 
@@ -72,8 +74,6 @@ public class CuadradoJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\labctr.BQV-LAB-SALA8\\Documents\\TRABAJO GRUPAL\\FrigurasMongoDB\\cuadrado1.png")); // NOI18N
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -87,9 +87,9 @@ public class CuadradoJPanel extends javax.swing.JPanel {
                         .addContainerGap()
                         .addComponent(jLabelTitulo))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
+                        .addGap(33, 33, 33)
+                        .addComponent(jLabelImg, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabelLado)
@@ -111,9 +111,10 @@ public class CuadradoJPanel extends javax.swing.JPanel {
                 .addComponent(jLabelTitulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabelParrafo, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
+                        .addGap(12, 12, 12)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabelLado)
                             .addComponent(jTextFieldLado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -123,10 +124,8 @@ public class CuadradoJPanel extends javax.swing.JPanel {
                             .addComponent(jLabelResArea))
                         .addGap(21, 21, 21)
                         .addComponent(jButtonCalcular))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel1)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                    .addComponent(jLabelImg, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -140,8 +139,8 @@ public class CuadradoJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonCalcular;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelArea;
+    private javax.swing.JLabel jLabelImg;
     private javax.swing.JLabel jLabelLado;
     private javax.swing.JLabel jLabelParrafo;
     private javax.swing.JLabel jLabelResArea;
