@@ -6,7 +6,7 @@ package frontend;
 
 /**
  *
- * @author david
+ * @author danta
  */
 public class MenuJFrame extends javax.swing.JFrame {
 
@@ -15,21 +15,12 @@ public class MenuJFrame extends javax.swing.JFrame {
      */
     public MenuJFrame() {
         initComponents();
-        jLabelTitulo.putClientProperty("FlatLaf.styleClass", "h2");
-        jButtonTriangulo.putClientProperty("FlatLaf.styleClass", "h3");
-        jButtonCuadrado.putClientProperty("FlatLaf.styleClass", "h3");
-        jButtonCirculo.putClientProperty("FlatLaf.styleClass", "h3");
-        jButtonSalir.putClientProperty("FlatLaf.styleClass", "h3");
-        jButtonListar.putClientProperty("FlatLaf.styleClass", "h3");
-        jButtonEliminar.putClientProperty("FlatLaf.styleClass", "h3");
 
         MenuJPanel menu = new MenuJPanel();
-        
-        
-        menu.setLocation(0,0);
+
+        menu.setLocation(0, 0);
         menu.setSize(jPanelContenido.getWidth(), jPanelContenido.getHeight());
 
-        
         jPanelContenido.removeAll();
         jPanelContenido.add(menu);
         jPanelContenido.revalidate();
@@ -45,94 +36,62 @@ public class MenuJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanelLateral = new javax.swing.JPanel();
-        jLabelTitulo = new javax.swing.JLabel();
-        jButtonTriangulo = new javax.swing.JButton();
-        jButtonCirculo = new javax.swing.JButton();
-        jButtonCuadrado = new javax.swing.JButton();
-        jButtonListar = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jButtonGrafica = new javax.swing.JButton();
+        jButtonCalcular = new javax.swing.JButton();
+        jButtonConsultar = new javax.swing.JButton();
         jButtonEliminar = new javax.swing.JButton();
-        jPanelSuperior = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         jButtonSalir = new javax.swing.JButton();
         jPanelContenido = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(700, 500));
 
-        jPanelLateral.setBackground(new java.awt.Color(41, 102, 98));
+        jPanel1.setBackground(new java.awt.Color(155, 163, 204));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabelTitulo.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelTitulo.setText("Areas de figuras");
-        jLabelTitulo.setToolTipText("");
+        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        jLabel1.setText("EXPERIMENTOS");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 110, 20));
 
-        jButtonTriangulo.setText("Area del triangulo");
-        jButtonTriangulo.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGrafica.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonGrafica.setText("Visualizar");
+        jButtonGrafica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonTrianguloActionPerformed(evt);
+                jButtonGraficaActionPerformed(evt);
             }
         });
+        jPanel1.add(jButtonGrafica, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 130, 33));
 
-        jButtonCirculo.setText("Area del circulo");
-        jButtonCirculo.addActionListener(new java.awt.event.ActionListener() {
+        jButtonCalcular.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonCalcular.setText("Realizar Expe");
+        jButtonCalcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCirculoActionPerformed(evt);
+                jButtonCalcularActionPerformed(evt);
             }
         });
+        jPanel1.add(jButtonCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 130, 33));
 
-        jButtonCuadrado.setText("Area del cuadrado");
-        jButtonCuadrado.addActionListener(new java.awt.event.ActionListener() {
+        jButtonConsultar.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonConsultar.setText("Consultar Datos");
+        jButtonConsultar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCuadradoActionPerformed(evt);
+                jButtonConsultarActionPerformed(evt);
             }
         });
+        jPanel1.add(jButtonConsultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 130, 33));
 
-        jButtonListar.setText("Listar Áreas");
-        jButtonListar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonListarActionPerformed(evt);
-            }
-        });
-
-        jButtonEliminar.setText("Eliminar Áreas");
+        jButtonEliminar.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonEliminar.setText("Eliminar Datos");
         jButtonEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonEliminarActionPerformed(evt);
             }
         });
+        jPanel1.add(jButtonEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 130, 33));
 
-        javax.swing.GroupLayout jPanelLateralLayout = new javax.swing.GroupLayout(jPanelLateral);
-        jPanelLateral.setLayout(jPanelLateralLayout);
-        jPanelLateralLayout.setHorizontalGroup(
-            jPanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelLateralLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabelTitulo))
-            .addComponent(jButtonTriangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jButtonCirculo, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jButtonCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jButtonListar, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jButtonEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        jPanelLateralLayout.setVerticalGroup(
-            jPanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelLateralLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jLabelTitulo)
-                .addGap(18, 18, 18)
-                .addComponent(jButtonTriangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jButtonCirculo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jButtonCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jButtonListar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jButtonEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        jPanelSuperior.setBackground(new java.awt.Color(41, 102, 98));
-        jPanelSuperior.setPreferredSize(new java.awt.Dimension(440, 60));
+        jPanel2.setBackground(new java.awt.Color(155, 163, 204));
 
         jButtonSalir.setForeground(new java.awt.Color(255, 255, 255));
         jButtonSalir.setText("Salir");
@@ -142,30 +101,30 @@ public class MenuJFrame extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanelSuperiorLayout = new javax.swing.GroupLayout(jPanelSuperior);
-        jPanelSuperior.setLayout(jPanelSuperiorLayout);
-        jPanelSuperiorLayout.setHorizontalGroup(
-            jPanelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelSuperiorLayout.createSequentialGroup()
-                .addContainerGap(464, Short.MAX_VALUE)
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(294, Short.MAX_VALUE)
                 .addComponent(jButtonSalir)
-                .addGap(17, 17, 17))
+                .addGap(20, 20, 20))
         );
-        jPanelSuperiorLayout.setVerticalGroup(
-            jPanelSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelSuperiorLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
                 .addComponent(jButtonSalir)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
-        jPanelContenido.setPreferredSize(new java.awt.Dimension(424, 251));
+        jPanelContenido.setPreferredSize(new java.awt.Dimension(440, 300));
 
         javax.swing.GroupLayout jPanelContenidoLayout = new javax.swing.GroupLayout(jPanelContenido);
         jPanelContenido.setLayout(jPanelContenidoLayout);
         jPanelContenidoLayout.setHorizontalGroup(
             jPanelContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 511, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jPanelContenidoLayout.setVerticalGroup(
             jPanelContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -177,86 +136,77 @@ public class MenuJFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanelLateral, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanelSuperior, javax.swing.GroupLayout.DEFAULT_SIZE, 553, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanelContenido, javax.swing.GroupLayout.PREFERRED_SIZE, 511, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                .addGap(130, 130, 130)
+                .addComponent(jPanelContenido, javax.swing.GroupLayout.DEFAULT_SIZE, 385, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(129, 129, 129)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelLateral, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanelSuperior, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(jPanelContenido, javax.swing.GroupLayout.DEFAULT_SIZE, 353, Short.MAX_VALUE))
+                .addGap(50, 50, 50)
+                .addComponent(jPanelContenido, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 330, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonCirculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCirculoActionPerformed
-        CirculoJPanel cir = new CirculoJPanel();
-        cir.setSize(jPanelContenido.getWidth(), jPanelContenido.getHeight());
-
-        cir.setLocation(0, 0);
-        jPanelContenido.removeAll();
-        jPanelContenido.add(cir);
-        jPanelContenido.revalidate();
-        jPanelContenido.repaint();
-    }//GEN-LAST:event_jButtonCirculoActionPerformed
-
-    private void jButtonTrianguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTrianguloActionPerformed
-
-        TrianguloJPanel tri = new TrianguloJPanel();
-        tri.setSize(jPanelContenido.getWidth(), jPanelContenido.getHeight());
-
-        tri.setLocation(0, 0);
-        jPanelContenido.removeAll();
-        jPanelContenido.add(tri);
-        jPanelContenido.revalidate();
-        jPanelContenido.repaint();
-    }//GEN-LAST:event_jButtonTrianguloActionPerformed
-
-    private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
-        dispose();
-    }//GEN-LAST:event_jButtonSalirActionPerformed
-
-    private void jButtonCuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCuadradoActionPerformed
-        CuadradoJPanel cua = new CuadradoJPanel();
-        cua.setSize(jPanelContenido.getWidth(), jPanelContenido.getHeight());
-
-        cua.setLocation(0, 0);
-        jPanelContenido.removeAll();
-        jPanelContenido.add(cua);
-        jPanelContenido.revalidate();
-        jPanelContenido.repaint();
-    }//GEN-LAST:event_jButtonCuadradoActionPerformed
-
-    private void jButtonListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonListarActionPerformed
+    private void jButtonGraficaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGraficaActionPerformed
         // TODO add your handling code here:
-        ListarJPanel listar = new ListarJPanel();
-        listar.setSize(jPanelContenido.getWidth(), jPanelContenido.getHeight());
+        GraficaJPanel gra = new GraficaJPanel();
+        gra.setSize(jPanelContenido.getWidth(), jPanelContenido.getHeight());
 
-        listar.setLocation(0, 0);
+        gra.setLocation(0, 0);
         jPanelContenido.removeAll();
-        jPanelContenido.add(listar);
+        jPanelContenido.add(gra);
         jPanelContenido.revalidate();
         jPanelContenido.repaint();
-    }//GEN-LAST:event_jButtonListarActionPerformed
+    }//GEN-LAST:event_jButtonGraficaActionPerformed
+
+    private void jButtonCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCalcularActionPerformed
+        // TODO add your handling code here:
+        ExperimentoJPanel exp = new ExperimentoJPanel();
+        exp.setSize(jPanelContenido.getWidth(), jPanelContenido.getHeight());
+
+        exp.setLocation(0, 0);
+        jPanelContenido.removeAll();
+        jPanelContenido.add(exp);
+        jPanelContenido.revalidate();
+        jPanelContenido.repaint();
+    }//GEN-LAST:event_jButtonCalcularActionPerformed
+
+    private void jButtonConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConsultarActionPerformed
+        // TODO add your handling code here:
+        ConsultarJPanel con = new ConsultarJPanel();
+        con.setSize(jPanelContenido.getWidth(), jPanelContenido.getHeight());
+
+        con.setLocation(0, 0);
+        jPanelContenido.removeAll();
+        jPanelContenido.add(con);
+        jPanelContenido.revalidate();
+        jPanelContenido.repaint();
+    }//GEN-LAST:event_jButtonConsultarActionPerformed
 
     private void jButtonEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEliminarActionPerformed
         // TODO add your handling code here:
-        EliminarAreasJPanel eliminar = new EliminarAreasJPanel();
-        eliminar.setSize(jPanelContenido.getWidth(), jPanelContenido.getHeight());
+        EliminarJPanel eli = new EliminarJPanel();
+        eli.setSize(jPanelContenido.getWidth(), jPanelContenido.getHeight());
 
-        eliminar.setLocation(0, 0);
+        eli.setLocation(0, 0);
         jPanelContenido.removeAll();
-        jPanelContenido.add(eliminar);
+        jPanelContenido.add(eli);
         jPanelContenido.revalidate();
         jPanelContenido.repaint();
     }//GEN-LAST:event_jButtonEliminarActionPerformed
+
+    private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jButtonSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -294,15 +244,14 @@ public class MenuJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonCirculo;
-    private javax.swing.JButton jButtonCuadrado;
+    private javax.swing.JButton jButtonCalcular;
+    private javax.swing.JButton jButtonConsultar;
     private javax.swing.JButton jButtonEliminar;
-    private javax.swing.JButton jButtonListar;
+    private javax.swing.JButton jButtonGrafica;
     private javax.swing.JButton jButtonSalir;
-    private javax.swing.JButton jButtonTriangulo;
-    private javax.swing.JLabel jLabelTitulo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanelContenido;
-    private javax.swing.JPanel jPanelLateral;
-    private javax.swing.JPanel jPanelSuperior;
     // End of variables declaration//GEN-END:variables
 }
